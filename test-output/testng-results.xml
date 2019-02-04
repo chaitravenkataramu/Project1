@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="5" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Run TestA..]]>
+    </line>
+    <line>
+      <![CDATA[photopath:./photo/testA.png]]>
+    </line>
+    <line>
+      <![CDATA[RC:5]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="61621" started-at="2019-01-03T14:15:22Z" finished-at="2019-01-03T14:16:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="61621" started-at="2019-01-03T14:15:22Z" finished-at="2019-01-03T14:16:24Z">
+      <class name="script.InvalidLogin">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InvalidLogin@27a8c74e]" name="openApp" is-config="true" duration-ms="11763" started-at="2019-01-03T14:16:00Z" finished-at="2019-01-03T14:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@27a8c74e]" name="testInvalidLogin" duration-ms="9842" started-at="2019-01-03T14:16:12Z" finished-at="2019-01-03T14:16:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[RC:5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@27a8c74e]" name="closeApp" is-config="true" duration-ms="2114" started-at="2019-01-03T14:16:21Z" finished-at="2019-01-03T14:16:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@27a8c74e] output=RC:5]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="print()[pri:0, instance:script.InvalidLogin@27a8c74e]" name="print" is-config="true" duration-ms="319" started-at="2019-01-03T14:16:24Z" finished-at="2019-01-03T14:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+      </class> <!-- script.InvalidLogin -->
+      <class name="script.ValidLogin">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin@1b68ddbd]" name="openApp" is-config="true" duration-ms="14338" started-at="2019-01-03T14:15:37Z" finished-at="2019-01-03T14:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@1b68ddbd]" name="testValidLogin" duration-ms="6592" started-at="2019-01-03T14:15:51Z" finished-at="2019-01-03T14:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@1b68ddbd]" name="closeApp" is-config="true" duration-ms="2356" started-at="2019-01-03T14:15:57Z" finished-at="2019-01-03T14:16:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1b68ddbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.ValidLogin -->
+      <class name="script.TC1">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.TC1@2d8f65a4]" name="openApp" is-config="true" duration-ms="11872" started-at="2019-01-03T14:15:22Z" finished-at="2019-01-03T14:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.TC1@2d8f65a4]" name="testA" duration-ms="11" started-at="2019-01-03T14:15:34Z" finished-at="2019-01-03T14:15:34Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.fail(Assert.java:95)
+at script.TC1.testA(TC1.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Run TestA..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TC1@2d8f65a4]" name="closeApp" is-config="true" duration-ms="2679" started-at="2019-01-03T14:15:34Z" finished-at="2019-01-03T14:15:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=TC1.testA()[pri:0, instance:script.TC1@2d8f65a4] output=Run TestA..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[photopath:./photo/testA.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.TC1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
